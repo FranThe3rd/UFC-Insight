@@ -6,15 +6,15 @@ import noProfile from '../../assets/no-profile-image.png'
 import { NavLink } from 'react-router-dom';
 import { TailSpin } from 'react-loader-spinner';
 
-function SearchName() {
+function SearchBirthday() {
 
   const [fighterData, setFighterData] = useState([])
   const [inputValue, setInputValue] = useState('')
   const [showMore,setShowMore] = useState(24)
   const [loading,setLoading] = useState(false)
 
-  let url = "http://localhost:8080/fighter?name=" + inputValue
-  let allUrl = "http://localhost:8080/fighter"
+  let url = "http://localhost:8080/fighter?dob=" + inputValue
+  let allUrl = "http://localhost:8080/fighter?dob="
 
 
   const addMorePages = () => {
@@ -87,7 +87,7 @@ function SearchName() {
       <div className='search-function'>
         <div className='search-bar'>
           <MagnifyingGlass className='magnifying-glass' size={20} />
-          <input className='input-label' placeholder='Search Athlete By Name' onChange={handleChange} value={inputValue} type='text' onKeyDown={handleKeyDown} />
+          <input className='input-label' placeholder='Search Athlete By Birthdate' onChange={handleChange} value={inputValue} type='text' onKeyDown={handleKeyDown} />
         </div>
       </div>
 
@@ -134,4 +134,4 @@ function SearchName() {
   );
 }
 
-export default SearchName;
+export default SearchBirthday;

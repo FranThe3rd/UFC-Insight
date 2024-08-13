@@ -6,15 +6,15 @@ import noProfile from '../../assets/no-profile-image.png'
 import { NavLink } from 'react-router-dom';
 import { TailSpin } from 'react-loader-spinner';
 
-function SearchName() {
+function SearchHeight() {
 
   const [fighterData, setFighterData] = useState([])
   const [inputValue, setInputValue] = useState('')
   const [showMore,setShowMore] = useState(24)
   const [loading,setLoading] = useState(false)
 
-  let url = "http://localhost:8080/fighter?name=" + inputValue
-  let allUrl = "http://localhost:8080/fighter"
+  let url = "http://localhost:8080/fighter?height=" + inputValue
+  let allUrl = "http://localhost:8080/fighter?height="
 
 
   const addMorePages = () => {
@@ -87,7 +87,7 @@ function SearchName() {
       <div className='search-function'>
         <div className='search-bar'>
           <MagnifyingGlass className='magnifying-glass' size={20} />
-          <input className='input-label' placeholder='Search Athlete By Name' onChange={handleChange} value={inputValue} type='text' onKeyDown={handleKeyDown} />
+          <input className='input-label' placeholder='Search Athlete By Height' onChange={handleChange} value={inputValue} type='text' onKeyDown={handleKeyDown} />
         </div>
       </div>
 
@@ -106,9 +106,7 @@ function SearchName() {
 
               <h2 id='fighter-name'>{fighter.name}</h2>
               <h1>{fighter.weight}</h1>
-              <h1>{fighter.stance}</h1>
               <h1>{fighter.height}</h1>
-              <h1>{fighter.dob}</h1>
               <a target='_blank' href={fighter.url}><Info color='black'/></a>
             </div>
           ))
@@ -134,4 +132,4 @@ function SearchName() {
   );
 }
 
-export default SearchName;
+export default SearchHeight;

@@ -197,6 +197,10 @@ function Popular() {
              <h2 id='fighter-name'>{popular.name}</h2>
              <h1>{popular.weight}</h1>
              <h1>{popular.stance}</h1>
+             <h1>{popular.height}</h1>
+             <h1>{popular.dob}</h1>
+
+
              <a target='_blank' href={popular.url}><Info color='black'/></a>
            </div>
         )

@@ -182,6 +182,10 @@ function Champions() {
              <h2 id='fighter-name'>{champion.name}</h2>
              <h1>{champion.weight}</h1>
              <h1>{champion.stance}</h1>
+             <h1>{champion.height}</h1>
+             <h1>{champion.dob}</h1>
+
+
              <a target='_blank' href={champion.url}><Info color='black'/></a>
            </div>
         )
