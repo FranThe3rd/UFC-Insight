@@ -1,0 +1,134 @@
+
+
+.searchName {
+  margin: 0 auto;
+  width: 70%;
+}
+
+
+
+.all {
+letter-spacing: 3px;
+  text-align: center;
+  margin-top: 100px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: clamp(2rem, 5vw, 4.5rem);
+}
+
+.numberOfAthletes {
+  margin-top: 50px;
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: clamp(.1rem, 5vw, 1rem);
+}
+
+.search-function {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 50px;
+
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: rgb(240, 238, 238);
+  border-radius: 5px;
+  
+
+}
+
+.magnifying-glass {
+
+  color: rgb(86, 84, 84);
+
+}
+
+.input-label {
+  letter-spacing: 1px;
+  padding-left: 10px;
+  width: 200px;
+  background-color: rgb(240, 238, 238);
+  border: none;
+  height: 35px;
+  font-family: "Bebas Neue", sans-serif;
+  border-radius: 2px;
+
+}
+
+.bar-line {
+  border-bottom: 1px solid black;
+  margin-bottom: 40px;
+}
+
+
+.searchGrid {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 20px;
+}
+.card {
+  margin: 0 auto;
+  max-width: 250px;
+  width: 100%;
+  color: white;
+  transition: all ease-in-out 0.7s;
+  padding: 5px;
+  min-height: 150px;
+
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+.card-img {
+ display: grid;
+ justify-content: center;
+ 
+}
+
+.card-img img {
+  max-width: 150px;
+  width: 100%;
+}
+
+.bar-line2 {
+  margin: 0 auto;
+  width: 80%;
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+}
+
+
+
+ 
+
+.card h1 {
+  font-family: "Bebas Neue", sans-serif;
+   text-align: center;
+  font-size: clamp(1rem, 5vw, 1rem);
+  color: black;
+  font-weight: 100;
+
+}
+
+#fighter-name {
+  color: black;
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 1000;
+  font-size: clamp(1rem, 5vw, 1.5rem);
+
+
+}
+
+
+@media screen and (max-width: 1010px) {
+  .searchGrid {
+    grid-template-columns: repeat(2,1fr);
+
+  }
+}
