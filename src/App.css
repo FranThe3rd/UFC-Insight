@@ -2,16 +2,17 @@
   text-align: center;
 }
 
+
 .hidden {
   opacity: 0;
   margin: 0 auto;
-  width: 80%;
+  width: 100%;
   transition: ease-in-out 1s;
 }
 
 .show {
   opacity: 1;
-  width: 100%;
+  width: 80%;
   transform: translateY(0);
 
 
