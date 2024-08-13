@@ -43,7 +43,7 @@ function Navbar() {
             <img className='ufc-logo' src={ufcLogo} alt="" />
             <ul className={`${styles.navMenu}  ${isActive ? styles.active : ''}`}>
               <li onClick={removeActive}>
-                <a href='#home' className={`${styles.navLink}`}>Athletes</a>
+                <a href='/' className={`${styles.navLink}`}>Athletes</a>
               </li>
               <li onClick={removeActive}>
                 <a href='#home' className={`${styles.navLink}`}>Weight Division</a>
