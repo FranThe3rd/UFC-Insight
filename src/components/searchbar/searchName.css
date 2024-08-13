@@ -6,20 +6,38 @@
 }
 
 
+.titles {
+  margin: 0 auto;
+  max-width: 900px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
 
 .all {
 letter-spacing: 3px;
   text-align: center;
   margin-top: 100px;
   font-family: "Bebas Neue", sans-serif;
-  font-size: clamp(2rem, 5vw, 4.5rem);
+  font-size: clamp(1.5rem, 5vw, 3.5rem);
+  color: grey;
+  cursor: pointer;
+  transition: all ease-in-out 0.5s;
 }
+
+.all:hover {
+  color: black;
+}
+
+
 
 .numberOfAthletes {
   margin-top: 50px;
   text-align: center;
   font-family: "Bebas Neue", sans-serif;
   font-size: clamp(.1rem, 5vw, 1rem);
+  margin-bottom: 40px;
 }
 
 .search-function {
@@ -130,5 +148,16 @@ letter-spacing: 3px;
   .searchGrid {
     grid-template-columns: repeat(2,1fr);
 
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  .search-bar {
+    width: 100%;
+  }
+
+  .input-label {
+    width: 100%;
   }
 }

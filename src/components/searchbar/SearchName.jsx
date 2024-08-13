@@ -10,6 +10,8 @@ function SearchName() {
   const [inputValue, setInputValue] = useState('')
 
   let url = "http://localhost:8080/fighter?name=" + inputValue
+  let allUrl = "http://localhost:8080/fighter"
+
 
 
   const countFighter = (fighterArray) => {
@@ -42,9 +44,32 @@ function SearchName() {
     })
   }
 
+  const getAllFighters = () => {
+    axios.get(allUrl).then(res => {
+      setFighterData(res.data)
+      countFighter(res.data)
+    }).catch(err => {
+      console.log(err)
+    })
+  }
+
+  useEffect(()=> {
+    getFighter()
+  },[])
+
+
   return (
     <div className="searchName">
-      <h1 className='all'>UFC Fighters</h1>
+      <div className="titles">
+        <h1 onClick={getAllFighters} className='all'>All</h1>
+        <h1 className='all'>Champions</h1>
+        <h1 className='all'>Popularity</h1>
+
+
+
+
+      </div>
+
       <h2 className='numberOfAthletes'>{countFighter(fighterData)} Athletes</h2>
       <div className='search-function'>
         <div className='search-bar'>
