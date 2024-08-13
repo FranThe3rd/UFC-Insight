@@ -106,7 +106,9 @@ function SearchHeight() {
 
               <h2 id='fighter-name'>{fighter.name}</h2>
               <h1>{fighter.weight}</h1>
+              <h1>{fighter.stance}</h1>
               <h1>{fighter.height}</h1>
+              <h1>{fighter.dob}</h1>
               <a target='_blank' href={fighter.url}><Info color='black'/></a>
             </div>
           ))
