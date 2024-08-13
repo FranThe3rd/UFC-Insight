@@ -8,11 +8,15 @@ function SearchName() {
 
   const [fighterData, setFighterData] = useState([])
   const [inputValue, setInputValue] = useState('')
+  const [showMore,setShowMore] = useState(24)
 
   let url = "http://localhost:8080/fighter?name=" + inputValue
   let allUrl = "http://localhost:8080/fighter"
 
 
+  const addMorePages = () => {
+    setShowMore(showMore + 24)
+  }
 
   const countFighter = (fighterArray) => {
    let count = 0
@@ -30,6 +34,7 @@ function SearchName() {
     if (event.key === 'Enter') {
       event.preventDefault(); // Prevent default behavior (e.g., form submission)
       getFighter();
+      setShowMore(24)
     }
 
   };
@@ -81,7 +86,7 @@ function SearchName() {
       <div className='bar-line'></div>
       <div className="searchGrid">
         {
-          fighterData.map((fighter, index) => (
+          fighterData.slice(0,showMore).map((fighter, index) => (
             <div className='card' key={index}>
               <div className='card-img'>
                 <img src={noProfile} alt="" />
@@ -95,6 +100,9 @@ function SearchName() {
             </div>
           ))
         }
+      </div>
+      <div className='load-more'>
+      <button className='load-more-btn' onClick={addMorePages}>Load More</button>
       </div>
     </div>
   );
