@@ -174,9 +174,9 @@ letter-spacing: 3px;
   max-width: 300px;
   width: 100%;
   font-family: "Bebas Neue", sans-serif;
-  color: rgb(255, 255, 255);
-  background-color: rgb(255, 0, 0);
-  border: none;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  border: solid 1px black;
   font-size: clamp(1rem,3vw,1.2rem);
   border-radius: 5px;
   transition: all ease-in-out 0.3s;
@@ -186,14 +186,11 @@ letter-spacing: 3px;
 
 .load-more-btn:hover{
   transform: scale(1.14);
+  opacity: 50%;
  
 }
 
-.load-more-btn:active{
-  background-color: rgba(255, 0, 0, 0.559);
 
- 
-}
 
 
 @media screen and (max-width: 1010px) {
