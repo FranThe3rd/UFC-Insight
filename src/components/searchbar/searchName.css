@@ -1,5 +1,6 @@
 
 
+
 .searchName {
   margin: 0 auto;
   width: 70%;
@@ -208,5 +209,14 @@ letter-spacing: 3px;
 
   .input-label {
     width: 100%;
+  }
+
+  .titles {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .all {
+    margin-top: 20px;
   }
 }
