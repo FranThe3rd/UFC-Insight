@@ -3,14 +3,32 @@
 }
 
 
-.hidden {
+.hideLeft {
   opacity: 0;
-  transition: ease-in-out 1s;
+  transition: ease-in-out 1.5s;
+  transform: translateX(-10%);
+  filter: blur(5px);
 }
 
-.show {
+.showLeft {
   opacity: 1;
+  transform: translateX(0);
+  filter: none;
 
+}
+
+.hideRight{
+  opacity: 0;
+  transition: ease-in-out 1.5s;
+  transform: translateX(10%);
+  filter: blur(5px);
+
+}
+
+.showRight {
+  opacity: 1;
+  transform: translateX(0);
+  filter: none;
 
 }
 

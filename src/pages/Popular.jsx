@@ -4,6 +4,8 @@ import axios from 'axios';
 import { MagnifyingGlass,Info } from 'phosphor-react';
 import { NavLink } from 'react-router-dom';
 import noProfile from '../assets/no-profile-image.png'
+import Navbar from '../components/navbar/Navbar';
+
 
 
 function Popular() {
@@ -168,8 +170,10 @@ function Popular() {
 
   return (
     <div className="searchName">
+            <Navbar/>
+
       <div className="titles">
-      <NavLink to='/'>        <h1  className='all'>All</h1>
+      <NavLink to='/name'>        <h1  className='all'>All</h1>
       </NavLink>  
         <NavLink to='/champions'>        <h1 className='all'>Champions</h1>
         </NavLink>

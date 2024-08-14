@@ -5,6 +5,7 @@ import { MagnifyingGlass,Info } from 'phosphor-react';
 import noProfile from '../../assets/no-profile-image.png'
 import { NavLink } from 'react-router-dom';
 import { TailSpin } from 'react-loader-spinner';
+import Navbar from '../navbar/Navbar';
 
 function SearchStance() {
 
@@ -71,8 +72,9 @@ function SearchStance() {
 
   return (
     <div className="searchName">
+      <Navbar/>
       <div className="titles">
-      <NavLink to='/'>        <h1 onClick={getAllFighters} className='all'>All</h1>
+      <NavLink to='/name'>        <h1 onClick={getAllFighters} className='all'>All</h1>
       </NavLink>  
         <NavLink to='/champions'>        <h1 className='all'>Champions</h1>
         </NavLink>

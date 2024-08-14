@@ -2,6 +2,7 @@ import { useState,useEffect } from 'react'
 import  styles from './Navbar.module.css';
 import ufcLogo from '../../assets/ufc-logo.png'
 import useIntersectionObserver from '../../animations/useIntersectionObserver';
+import { NavLink } from 'react-router-dom';
 
 function Navbar() {
     // adding the states 
@@ -39,11 +40,13 @@ function Navbar() {
     return (
       <div className='main' >
         <header className="navbar-header">
-        <nav className={`${styles.navbar} ${changedColor ? styles['navbar-change'] : ''}`}> {/**Changed Color*/}            
+        <nav className={`${styles.navbar} ${changedColor ? styles['navbar-change'] : ''}`}> {/**Changed Color*/} 
+          <NavLink to='/'>   
             <img className='ufc-logo' src={ufcLogo} alt="" />
+            </NavLink> 
             <ul className={`${styles.navMenu}  ${isActive ? styles.active : ''}`}>
               <li onClick={removeActive}>
-                <a href='/' className={`${styles.navLink}`}>Athletes</a>
+                <a href='/name' className={`${styles.navLink}`}>Athletes</a>
               </li>
               <li onClick={removeActive}>
                 <a href='/weight' className={`${styles.navLink}`}>Weight</a>
