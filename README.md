@@ -49,19 +49,21 @@ UFC Backend: https://github.com/FranThe3rd/UFC-Fighters-API
 
 1. Navigate to the backend directory
 2. Configure the PostgreSQL database connection in `application.properties`
-3. Build and run the Spring Boot application:
-   ```
-   ./mvnw spring-boot:run
-   ```
+3. Make a database called ufc with the dumpfile.sql
+4. Build and run the Spring Boot application by running the UltimateFightingChampionshipApplication.java application
+   
 
 ## API Endpoints
 
 - GET `/fighter`: Retrieve all fighters
-- GET `/fighter?name={name}`: Search fighters by name
+- GET `/fighter?name={Ex: Conor}`: Search fighters by name
+- GET `/fighter?weight={Ex: 170}`: Search fighters by weight
+- GET `/fighter?height={Ex: 5' 9}`: Search fighters by height
+- GET `/fighter?dob={Ex: apr 07}`: Search fighters by date of birth
+- GET `/fighter?stance={Ex: orthodox}`: Search fighters by date of birth
 
-## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
 
-## License
+
+
 
