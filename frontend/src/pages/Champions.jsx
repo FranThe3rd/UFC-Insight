@@ -36,7 +36,7 @@ function Champions() {
           "reach": "70\"",
           "stance": "Orthodox",
           "dob": "July 31, 1989",
-          "url": "http://ufcstats.com/fighter-details/b770009f4118581b"
+          "url": "http://ufcstats.com/fighter-details/cb696ebfb6598724"
         },
         {
           "id": 4,
@@ -46,7 +46,7 @@ function Champions() {
           "reach": "67\"",
           "stance": "Orthodox",
           "dob": "December 7, 1993",
-          "url": "http://ufcstats.com/fighter-details/a77e43f29810792c"
+          "url": "http://ufcstats.com/fighter-details/792be9a24df82ed6"
         },
         {
           "id": 5,
@@ -56,7 +56,7 @@ function Champions() {
           "reach": "66\"",
           "stance": "Orthodox",
           "dob": "August 8, 1989",
-          "url": "http://ufcstats.com/fighter-details/881e01ff9b34a468"
+          "url": "http://ufcstats.com/fighter-details/1ebe20ebbfa15e29"
         },
         {
           "id": 6,
@@ -66,7 +66,7 @@ function Champions() {
           "reach": "69\"",
           "stance": "Orthodox",
           "dob": "May 1, 1988",
-          "url": "http://ufcstats.com/fighter-details/b00137c0401d63a0"
+          "url": "http://ufcstats.com/fighter-details/80fa8218c99f9c58"
         },
         {
           "id": 7,
@@ -76,7 +76,7 @@ function Champions() {
           "reach": "68\"",
           "stance": "Southpaw",
           "dob": "March 7, 1988",
-          "url": "http://ufcstats.com/fighter-details/0eb97281d9468572"
+          "url": "http://ufcstats.com/fighter-details/132deb59abae64b1"
         },
         {
           "id": 8,
@@ -86,7 +86,7 @@ function Champions() {
           "reach": "65\"",
           "stance": "Orthodox",
           "dob": "May 29, 1992",
-          "url": "http://ufcstats.com/fighter-details/c88008d448796d87"
+          "url": "http://ufcstats.com/fighter-details/47b63240018d5d86"
         },
         {
           "id": 9,
@@ -96,7 +96,7 @@ function Champions() {
           "reach": "76\"",
           "stance": "Orthodox",
           "dob": "February 25, 1991",
-          "url": "http://ufcstats.com/fighter-details/51c40a3e9a917688"
+          "url": "http://ufcstats.com/fighter-details/f1fac969a1d70b08"
         },
         {
           "id": 10,
@@ -106,7 +106,7 @@ function Champions() {
           "reach": "76\"",
           "stance": "Orthodox",
           "dob": "May 1, 1994",
-          "url": "http://ufcstats.com/fighter-details/c883108e5c311b6a"
+          "url": "http://ufcstats.com/fighter-details/767755fd74662dbf"
         },
         {
           "id": 11,
@@ -116,7 +116,7 @@ function Champions() {
           "reach": "80\"",
           "stance": "Southpaw",
           "dob": "January 10, 1990",
-          "url": "http://ufcstats.com/fighter-details/24f6359453817469"
+          "url": "http://ufcstats.com/fighter-details/e5549c82bfb5582d"
         },
         {
           "id": 12,
