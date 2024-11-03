@@ -48,7 +48,7 @@ function Popular() {
           reach: "76\"",
           stance: "Orthodox",
           dob: "May 19, 1981",
-          url: "http://ufcstats.com/fighter-details/91afd96d99b965b7"
+          url: "http://www.ufcstats.com/fighter-details/6506c1d34da9c013"
         },
         {
           id: 5,
@@ -58,7 +58,7 @@ function Popular() {
           reach: "84\"",
           stance: "Orthodox",
           dob: "July 19, 1987",
-          url: "http://ufcstats.com/fighter-details/f4d3b0b444154785"
+          url: "http://ufcstats.com/fighter-details/07f72a2a7591b409"
         },
         {
           id: 6,
@@ -68,7 +68,7 @@ function Popular() {
           reach: "68\"",
           stance: "Orthodox",
           dob: "February 1, 1987",
-          url: "http://ufcstats.com/fighter-details/e8ff75b2c5a7e51f"
+          url: "http://ufcstats.com/fighter-details/8bdac25ce0bb874d"
         },
         {
           id: 7,
@@ -78,7 +78,7 @@ function Popular() {
           reach: "72\"",
           stance: "Orthodox",
           dob: "March 20, 1979",
-          url: "http://ufcstats.com/fighter-details/5edef93fcc7c5ab9"
+          url: "http://ufcstats.com/fighter-details/d967f0128c323de6"
         },
         {
           id: 8,
@@ -88,7 +88,7 @@ function Popular() {
           reach: "69\"",
           stance: "Orthodox",
           dob: "May 30, 1988",
-          url: "http://ufcstats.com/fighter-details/b00137c0401d63a0"
+          url: "http://ufcstats.com/fighter-details/80fa8218c99f9c58"
         },
         {
           id: 9,
