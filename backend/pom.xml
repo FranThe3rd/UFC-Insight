@@ -12,6 +12,7 @@
 	<artifactId>ultimate-fighting-championship</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>UltimateFightingChampionship</name>
+	<packaging>jar</packaging>
 	<description>SpringBoot application that connects with a postgresql database with UFC information</description>
 	<url/>
 	<licenses>
