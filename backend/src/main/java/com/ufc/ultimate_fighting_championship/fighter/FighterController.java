@@ -7,7 +7,8 @@ import java.util.List;
 
 @RestController
 @RequestMapping(path = "/fighter")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = {"http://localhost:3000", "http://ufc-insight.s3-website-us-east-1.amazonaws.com"})
+
 
 
 public class FighterController {
