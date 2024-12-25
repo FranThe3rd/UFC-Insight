@@ -14,8 +14,9 @@ function SearchName() {
   const [showMore,setShowMore] = useState(24)
   const [loading,setLoading] = useState(false)
 
-  let url = "http://localhost:8080/fighter?name=" + inputValue
-  let allUrl = "http://localhost:8080/fighter"
+  let url = "http://ec2-18-208-251-151.compute-1.amazonaws.com:8080/fighter?name=" + inputValue;
+  let allUrl = "http://ec2-18-208-251-151.compute-1.amazonaws.com:8080/fighter";
+
 
 
   const addMorePages = () => {
@@ -46,21 +47,27 @@ function SearchName() {
 
   const getFighter = () => {
     axios.get(url).then(res => {
+      console.log("Getting Values" + res.data)
       setLoading(true)
       setFighterData(res.data)
       countFighter(res.data)
 
     }).catch(err => {
+      console.log("Search Name Dont work")
       console.log(err)
     })
   }
 
   const getAllFighters = () => {
     axios.get(allUrl).then(res => {
+      console.log("Getting All Values" + res.data)
+
       setLoading(true)
       setFighterData(res.data)
       countFighter(res.data)
     }).catch(err => {
+      console.log("Search All Name Dont work")
+
       console.log(err)
     })
   }

@@ -14,8 +14,10 @@ function SearchBirthday() {
   const [showMore,setShowMore] = useState(24)
   const [loading,setLoading] = useState(false)
 
-  let url = "http://localhost:8080/fighter?dob=" + inputValue
-  let allUrl = "http://localhost:8080/fighter?dob="
+  let url = "http://ec2-18-208-251-151.compute-1.amazonaws.com:8080/fighter?dob=" + inputValue
+  let allUrl = "http://ec2-18-208-251-151.compute-1.amazonaws.com:8080/fighter?dob="
+
+ 
 
 
   const addMorePages = () => {
