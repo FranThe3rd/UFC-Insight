@@ -60,7 +60,7 @@ UFC Backend: https://github.com/FranThe3rd/UFC-Fighters-API
 - GET `/fighter?weight={Ex: 170}`: Search fighters by weight
 - GET `/fighter?height={Ex: 5' 9}`: Search fighters by height
 - GET `/fighter?dob={Ex: apr 07}`: Search fighters by date of birth
-- GET `/fighter?stance={Ex: orthodox}`: Search fighters by date of birth
+- GET `/fighter?stance={Ex: orthodox}`: Search fighters by date of stance
 
 
 
