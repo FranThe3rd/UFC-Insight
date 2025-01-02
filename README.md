@@ -7,7 +7,6 @@ A web application for searching and viewing UFC fighter data.
 
 This project provides a user-friendly interface to search and explore UFC fighter information. Users can search by fighter name and view details such as weight, height, stance, and date of birth. The application uses React for the frontend and Spring Boot for the backend API, with data stored in a PostgreSQL database.
 
-UFC Backend: https://github.com/FranThe3rd/UFC-Fighters-API
 
 ## Features
 
