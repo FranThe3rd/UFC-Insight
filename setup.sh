@@ -9,3 +9,5 @@ cd UFC-Insight
 cd backend
 mvn clean package
 mvn spring-boot:run
+
+# Probably should use to keep it running after closing ec2 ```nohup mvn spring-boot:run &```
