@@ -13,8 +13,8 @@ function SearchStance() {
   const [showMore,setShowMore] = useState(24)
   const [loading,setLoading] = useState(false)
 
-  let url = "http://ec2-18-208-251-151.compute-1.amazonaws.com:8080/fighter?stance=" + inputValue
-  let allUrl = "http://ec2-18-208-251-151.compute-1.amazonaws.com:8080/fighter?stance="
+  let url = "http://ec2-54-221-116-99.compute-1.amazonaws.com:8080/fighter?stance=" + inputValue
+  let allUrl = "http://ec2-54-221-116-99.compute-1.amazonaws.com:8080/fighter?stance="
 
 
   const addMorePages = () => {
