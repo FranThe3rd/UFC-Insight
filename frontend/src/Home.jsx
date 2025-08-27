@@ -1,5 +1,6 @@
 import "./home.css"
 import { NavLink } from 'react-router-dom';
+import { motion } from "motion/react"
 
 export default function HomePage() {
   return (
@@ -18,11 +19,16 @@ export default function HomePage() {
                 Fighter Database
             </div>
 
-            <h1 className="hero-title">
+            <motion.h1
+                className="hero-title"
+                initial={{ opacity: 0, y: 40 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.7, ease: "easeOut" }}
+            >
                 UFC:
                 <br />
                 InsightBREAKDOWN
-            </h1>
+            </motion.h1>
 
             <p className="hero-subtitle">Get in Depth with our detailed database.</p>
 
@@ -41,7 +47,13 @@ export default function HomePage() {
       <section className="search-section">
         <div className="search-container">
           <div className="search-header">
-            <h2 className="search-title">Search Fighters by</h2>
+            <motion.h2 className="search-title"
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.6 }}
+                transition={{ duration: 0.7, ease: "easeOut" }}
+            
+            >Search Fighters by</motion.h2>
             <p className="search-description">Find any UFC fighter using our comprehensive search parameters</p>
           </div>
 
@@ -145,24 +157,33 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="cta-section">
+    {/* CTA Section */}
+    <section className="cta-section">
         <div className="cta-container">
-          <h2 className="cta-title">Start Searching Now</h2>
-          <p className="cta-description">
-            Access our comprehensive UFC fighter database with powerful search capabilities
-          </p>
-          <button className="cta-button">
-            <a target="_blank" href="https://github.com/Greco1899/scrape_ufc_stats">            Explore Database
-</a>
-            <svg className="button-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
-          </button>
+            <motion.h2
+                className="cta-title"
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.6 }}
+                transition={{ duration: 0.7, ease: "easeOut" }}
+            >
+                Start Searching Now
+            </motion.h2>
+            <p className="cta-description">
+                Access our comprehensive UFC fighter database with powerful search capabilities
+            </p>
+            <a target="_blank" href="https://github.com/Greco1899/scrape_ufc_stats">
+                <button className="cta-button">
+                    Explore Database
+                    <svg className="button-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                </button>
+            </a>
         </div>
-      </section>
+    </section>
 
-      {/* Footer */}
+    {/* Footer */}}
       <footer className="footer">
         <div className="footer-container">
           <div className="footer-brand">

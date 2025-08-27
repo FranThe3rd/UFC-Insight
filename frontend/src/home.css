@@ -101,7 +101,6 @@ body {
   z-index: 10;
   position: relative;
   /* More dramatic entrance animation */
-  animation: heroEntrance 1.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @keyframes heroEntrance {
