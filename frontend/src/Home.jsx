@@ -183,7 +183,7 @@ export default function HomePage() {
         </div>
     </section>
 
-    {/* Footer */}}
+    {/* Footer */}
       <footer className="footer">
         <div className="footer-container">
           <div className="footer-brand">
