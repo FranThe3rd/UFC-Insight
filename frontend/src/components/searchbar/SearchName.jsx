@@ -14,8 +14,8 @@ function SearchName() {
   const [showMore,setShowMore] = useState(24)
   const [loading,setLoading] = useState(false)
 
-  let url = "http://ec2-18-206-94-113.compute-1.amazonaws.com:8080/fighter?name=" + inputValue;
-  let allUrl = "http://ec2-18-206-94-113.compute-1.amazonaws.com:8080/fighter";
+  let url = "http://ec2-44-203-185-207.compute-1.amazonaws.com:8080/fighter?name=" + inputValue;
+  let allUrl = "http://ec2-44-203-185-207.compute-1.amazonaws.com:8080/fighter";
 
 
 
